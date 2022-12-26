@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:B{####}",
+ "creation": "2022-12-08 21:33:22.333343",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_details_section",
+  "customer_name",
+  "date",
+  "column_break_7",
+  "phone",
+  "payment_mode",
+  "billing_section_section",
+  "billed_items",
+  "payment_section_section",
+  "tax",
+  "grand_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "Cash\nCard\nUPI"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "billing_section_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Section"
+  },
+  {
+   "fieldname": "billed_items",
+   "fieldtype": "Table",
+   "label": "Billed Items",
+   "options": "Bill Table"
+  },
+  {
+   "fieldname": "payment_section_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Section"
+  },
+  {
+   "fieldname": "tax",
+   "fieldtype": "Percent",
+   "label": "Tax"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-11 19:49:35.023335",
+ "modified_by": "Administrator",
+ "module": "Billing Module",
+ "name": "Bill",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
